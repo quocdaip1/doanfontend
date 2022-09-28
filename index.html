@@ -1,29 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./assets/style/header.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/libs/bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style/header.css"/>
+    <link rel="stylesheet" href="./assets/style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Mulish:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&family=Noto+Serif&family=Roboto:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
     <title>Home page</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="header__nav">
-            <div class="header__nav-wrapper">
-                <div class="header__nav-left">
-                    <div class="nav-logo"></div>
-                    <div class="nav-list">
-                        <ul class="list">
-                            li.
-                        </ul>
-                    </div>
+      <nav class="header__nav">
+      <div class="container-fluid">
+        <div class="header__nav-wrapper d-flex justify-content-between">
+            <div class="header__nav-left d-flex">
+                <div class="header__nav-wrapper--logo">
+                    <img src="./assets/imgs/logo.webp" alt="logo">
                 </div>
-                <div class="header-nav-right"></div>
-
-            </div>
-        </nav>
+                <ul class="header__nav-wrapper--links d-flex align-items-center">
+                  <li class="link"><a href="">Home</a></li>
+                  <li class="link"><a href="">Buy</a></li>
+                  <li class="link"><a href="">Sell</a></li>
+                  <li class="link text-light has-children">Services
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <i class="fa-solid fa-chevron-up d-none"></i>
+                    <ul class="Services_dropdown d-none bg-light">
+                        <li><a  class="text-dark" href="">Sell items</a></li>
+                        <li><a class="text-dark" href="">Buy items</a></li>
+                        <li><a class="text-dark" href="">Submit a bid</a></li>
+                    </ul>
+                  </li>
+                  <li class="link"><a href="">Blog</a></li>
+                  <li class="link"><a href="">About</a></li>
+                  <li class="link"><a href="">Contact</a></li>
+                </ul>
+              </div>
+              <div class="header__nav-right">
+                <div class="header__nav-wrapper--login">
+                    <a href="#">Sign in/ Register</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      </nav>
     </header>
-</body>
+    <main id="content">
+      <div class="container">
+        <div class="intro-section d-flex justify-content-center align-items-center">
+          <div class="intro-section-banner text-center">
+            <h1>The Best Place to Buy and Sell
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nihil.
+            </p>
+            <button class="btn btn-primary">Register</button>
+          </div>
+        </div>
+        <div class=""></div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="./assets/libs/bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
 </html>
