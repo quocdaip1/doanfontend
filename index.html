@@ -1,79 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/libs/bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/css/bootstrap.min.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/style/header.css"/>
-    <link rel="stylesheet" href="./assets/style/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Mulish:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&family=Noto+Serif&family=Roboto:ital,wght@0,300;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <title>Home page</title>
-  </head>
-  <body>
-    <header>
-      <nav class="header__nav">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/libs/bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/style/header.css" />
+  <link rel="stylesheet" href="./assets/style/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Mulish:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&family=Noto+Serif&family=Roboto:ital,wght@0,300;1,300&display=swap"
+    rel="stylesheet" />
+  <title>Home page</title>
+</head>
+
+<body>
+  <header>
+    <nav class="header__nav">
       <div class="container-fluid">
         <div class="header__nav-wrapper d-flex justify-content-between">
-            <div class="header__nav-left d-flex">
-                <div class="header__nav-wrapper--logo">
-                    <img src="./assets/imgs/logo.webp" alt="logo">
-                </div>
-                <ul class="header__nav-wrapper--links d-flex align-items-center">
-                  <li class="link"><a href="">Home</a></li>
-                  <li class="link"><a href="">Buy</a></li>
-                  <li class="link"><a href="">Sell</a></li>
-                  <li class="link text-light has-children">Services
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-up d-none"></i>
-                    <ul class="Services_dropdown d-none bg-light">
-                        <li><a  class="text-dark" href="">Sell items</a></li>
-                        <li><a class="text-dark" href="">Buy items</a></li>
-                        <li><a class="text-dark" href="">Submit a bid</a></li>
-                    </ul>
-                  </li>
-                  <li class="link"><a href="">Blog</a></li>
-                  <li class="link"><a href="">About</a></li>
-                  <li class="link"><a href="">Contact</a></li>
+          <div class="header__nav-left d-flex">
+            <div class="header__nav-wrapper--logo">
+              <img src="./assets/imgs/logo.webp" alt="logo">
+            </div>
+            <ul class="header__nav-wrapper--links d-flex align-items-center">
+              <li class="link"><a href="">Home</a></li>
+              <li class="link"><a href="">Buy</a></li>
+              <li class="link"><a href="">Sell</a></li>
+              <li class="link text-light has-children">Services
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-up d-none"></i>
+                <ul class="Services_dropdown d-none bg-light">
+                  <li><a class="text-dark" href="">Sell items</a></li>
+                  <li><a class="text-dark" href="">Buy items</a></li>
+                  <li><a class="text-dark" href="">Submit a bid</a></li>
                 </ul>
-              </div>
-              <div class="header__nav-right">
-                <div class="header__nav-wrapper--login">
-                    <a href="#">Sign in/ Register</a>
-                </div>
-              </div>
+              </li>
+              <li class="link"><a href="">Blog</a></li>
+              <li class="link"><a href="">About</a></li>
+              <li class="link"><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="header__nav-right">
+            <div class="header__nav-wrapper--login">
+              <a href="#">Sign in/ Register</a>
+            </div>
           </div>
         </div>
       </div>
-      </nav>
-    </header>
-    <main id="content">
+      </div>
+    </nav>
+  </header>
+  <main id="content">
+    <div class="intro-section d-flex justify-content-center align-items-center">
+      <div class="intro-section-banner text-center">
+        <h1>The Best Place to Buy and Sell
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nihil.
+        </p>
+        <button class="btn btn-primary">Register</button>
+      </div>
+    </div>
+    <div class="site-section mb-3">
       <div class="container">
-        <div class="intro-section d-flex justify-content-center align-items-center">
-          <div class="intro-section-banner text-center">
-            <h1>The Best Place to Buy and Sell
-            </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nihil.
-            </p>
+        <div class="row mb-4 p-5">
+          <div class="col-md-7 mb-5 text-center mx-auto">
+            <span>AUCTIONS</span>
+            <h2>Current <strong>Auctions</strong></h2>
+          </div>
+        </div>
+        <div class="row goods-list">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card-goods">
+              <div class="card-img">
+                <img src="./assets/imgs/xproduct_1.jpg.pagespeed.ic.jv58llKnOW.webp" alt="">
+              </div>
+              <h2 class="title">Pinky shoes</h2>
+              <div class="prices">$15</div>
+              <button class="btn btn-primary">shop now</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card-goods">
+              <div class="card-img">
+                <img src="./assets/imgs/xproduct_2.jpg.pagespeed.ic.zYGt4XwKL2.webp" alt="">
+              </div>
+              <h2 class="title">Pinky shoes</h2>
+              <div class="prices">$15</div>
+              <button class="btn btn-primary">shop now</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card-goods">
+              <div class="card-img">
+                <img src="./assets/imgs/xproduct_3.jpg.pagespeed.ic.2g0ICPmV6O.webp" alt="">
+              </div>
+              <h2 class="title">Pinky shoes</h2>
+              <div class="prices">$15</div>
+              <button class="btn btn-primary">shop now</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card-goods">
+              <div class="card-img">
+                <img src="./assets/imgs/xproduct_4.jpg.pagespeed.ic.nXVsO01FP9.webp" alt="">
+              </div>
+              <h2 class="title">Pinky shoes</h2>
+              <div class="prices">$15</div>
+              <button class="btn btn-primary">shop now</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card-goods">
+              <div class="card-img">
+                <img src="./assets/imgs/xproduct_5.jpg.pagespeed.ic.96U3mkydkB.webp" alt="">
+              </div>
+              <h2 class="title">Pinky shoes</h2>
+              <div class="prices">$15</div>
+              <button class="btn btn-primary">shop now</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card-goods">
+              <div class="card-img">
+                <img src="./assets/imgs/xproduct_6.jpg.pagespeed.ic.o7nMT9VPXJ.webp" alt="">
+              </div>
+              <h2 class="title">Pinky shoes</h2>
+              <div class="prices">$15</div>
+              <button class="btn btn-primary">shop now</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card-goods">
+              <div class="card-img">
+                <img src="./assets/imgs/xproduct_7.jpg.pagespeed.ic.k1dM1LPDeN.webp" alt="">
+              </div>
+              <h2 class="title">Pinky shoes</h2>
+              <div class="prices">$15</div>
+              <button class="btn btn-primary">shop now</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card-goods">
+              <div class="card-img">
+                <img src="./assets/imgs/xproduct_8.jpg.pagespeed.ic._zi5TVQkpp.webp" alt="">
+              </div>
+              <h2 class="title">Pinky shoes</h2>
+              <div class="prices">$15</div>
+              <button class="btn btn-primary">Shop now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-section mb-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7">
+            <span>How?</span>
+            <h2>How <strong>It Works</strong></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card-step">
+              <div class="icon d-flex align-items-center justify-content-between">
+                <div class="box-icon d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-user icon-left"></i>
+                </div>
+                <i class="fa-solid fa-chevron-right icon-right"></i>
+              </div>
+              <h3>Register</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolore hic fugiat maxime nihil? Id,
+                enim? Officiis rem doloribus iure? Rem tempore doloribus iste deleniti neque cupiditate earum placeat
+                obcaecati.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card-step">
+              <div class="icon d-flex align-items-center justify-content-between">
+                <div class="box-icon d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-user icon-left"></i>
+                </div>
+                <i class="fa-solid fa-chevron-right icon-right"></i>
+              </div>
+              <h3>Buy of Bid</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolore hic fugiat maxime nihil? Id,
+                enim? Officiis rem doloribus iure? Rem tempore doloribus iste deleniti neque cupiditate earum placeat
+                obcaecati.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card-step">
+              <div class="icon d-flex align-items-center justify-content-between">
+                <div class="box-icon d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-user icon-left"></i>
+                </div>
+                <i class="fa-solid fa-chevron-right icon-right"></i>
+              </div>
+              <h3>Submit a bid
+              </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolore hic fugiat maxime nihil? Id,
+                enim? Officiis rem doloribus iure? Rem tempore doloribus iste deleniti neque cupiditate earum placeat
+                obcaecati.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card-step">
+              <div class="icon d-flex align-items-center justify-content-between">
+                <div class="box-icon d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-user icon-left"></i>
+                </div>
+              </div>
+              <h3>Win
+              </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolore hic fugiat maxime nihil? Id,
+                enim? Officiis rem doloribus iure? Rem tempore doloribus iste deleniti neque cupiditate earum placeat
+                obcaecati.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="site-section mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <img src="./assets/imgs/hero_1.jpg.webp" alt="">
+          </div>
+          <div class="col-lg-5 ps-5">
+            <div class="card-aboutUs">
+              <div class="caption mb-5">
+                <span>About?</span>
+                <h2>About <strong>Us</strong></h2>
+              </div>
+              <div class="d-flex mb-4">
+                <div class="box-icon d-flex justify-content-center align-items-center">
+                  <i class="fa-regular fa-paper-plane"></i>
+                </div>
+                <div class="text">
+                  <span>Fast Support</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, debitis!
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex mb-4">
+                <div class="box-icon d-flex justify-content-center align-items-center">
+                  <i class="fa-regular fa-face-smile"></i>
+                </div>
+                <div class="text">
+                  <span>Happy Customers
+                  </span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, debitis!
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex mb-4">
+                <div class="box-icon d-flex justify-content-center align-items-center">
+                  <i class="fa-regular fa-life-ring"></i>
+                </div>
+                <div class="text">
+                  <span>24/7 Support
+                  </span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, debitis!
+                  </p>
+                </div>
+              </div>
+
+
+
+              <!-- <div class="box-icon d-flex justify-content-center align-items-center">
+                <i class="fa-regular fa-face-smile"></i>
+              </div>
+              <div class="box-icon d-flex justify-content-center align-items-center">
+                <i class="fa-regular fa-life-ring"></i>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="test d-flex align-items-center">
+      <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators btn-slide">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="test-item">
+                      <div class="test-person d-flex">
+                          <img src="./assets/imgs/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp" alt="">
+                        <div class="person">
+                          <h3>Allison Holmes</h3>
+                          <span>Designer</span>
+                        </div>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
+                        placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
+                        omnis maxime voluptatibus adipisci iste.</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="test-item">
+                      <div class="test-person d-flex">
+                          <img src="./assets/imgs/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp" alt="">
+                        <div class="person">
+                          <h3>Allison Holmes</h3>
+                          <span>Designer</span>
+                        </div>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
+                        placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
+                        omnis maxime voluptatibus adipisci iste.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="test-item">
+                      <div class="test-person d-flex">
+                          <img src="./assets/imgs/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp" alt="">
+                        <div class="person">
+                          <h3>Allison Holmes</h3>
+                          <span>Designer</span>
+                        </div>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
+                        placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
+                        omnis maxime voluptatibus adipisci iste.</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="test-item">
+                      <div class="test-person d-flex">
+                          <img src="./assets/imgs/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp" alt="">
+                        <div class="person">
+                          <h3>Allison Holmes</h3>
+                          <span>Designer</span>
+                        </div>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
+                        placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
+                        omnis maxime voluptatibus adipisci iste.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="test-item">
+                      <div class="test-person d-flex">
+                          <img src="./assets/imgs/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp" alt="">
+                        <div class="person">
+                          <h3>Allison Holmes</h3>
+                          <span>Designer</span>
+                        </div>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
+                        placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
+                        omnis maxime voluptatibus adipisci iste.</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="test-item">
+                      <div class="test-person d-flex">
+                          <img src="./assets/imgs/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp" alt="">
+                        <div class="person">
+                          <h3>Allison Holmes</h3>
+                          <span>Designer</span>
+                        </div>
+                      </div>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
+                        placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
+                        omnis maxime voluptatibus adipisci iste.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-section">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-center py-5">
+          <div class="col-lg-7">
+            <h2>Create an account and start Buy, Bid or Sell Now!</h2>
             <button class="btn btn-primary">Register</button>
           </div>
         </div>
-        <div class=""></div>
       </div>
-    </main>
-    <footer></footer>
-  </body>
-  <script src="./assets/libs/bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+    </div>
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+<script src="./assets/libs/bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+
 </html>
