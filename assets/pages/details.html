@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style/header.css" />
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/sliderDetail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Mulish:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&family=Noto+Serif&family=Roboto:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet" />
+    <title>Details</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header__nav">
+            <div class="container nav_container">
+                <div class="header__nav-wrapper d-flex justify-content-between">
+                    <div class="header__nav-left d-flex">
+                        <div class="header__nav-wrapper--logo">
+                            <img src="../imgs/logo.webp" alt="logo">
+                        </div>
+                        <ul class="header__nav-wrapper--links d-flex align-items-center">
+                            <li class="link"><a href="">Home</a></li>
+                            <li class="link"><a href="">Buy</a></li>
+                            <li class="link"><a href="">Sell</a></li>
+                            <li class="link text-light has-children">Services
+                                <i class="fa-solid fa-chevron-down mx-2"></i>
+                                <i class="fa-solid fa-chevron-up d-none"></i>
+                                <ul class="Services_dropdown d-none bg-light">
+                                    <li><a class="text-dark" href="">Sell items</a></li>
+                                    <li><a class="text-dark" href="">Buy items</a></li>
+                                    <li><a class="text-dark" href="">Submit a bid</a></li>
+                                </ul>
+                            </li>
+                            <li class="link"><a href="">Blog</a></li>
+                            <li class="link"><a href="">About</a></li>
+                            <li class="link"><a href="">Contact</a></li>
+                        </ul>
+                        <ul class="header__navbar-mobile-wrapper--links d-none">
+                            <i class="fa-solid fa-x position-absolute close-btn"></i>
+                            <li class="link"><a href="">Home</a></li>
+                            <li class="link"><a href="">Buy</a></li>
+                            <li class="link"><a href="">Sell</a></li>
+                            <li class="link text-dark has-children">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <a href="">Services</a>
+                                    <i class="fa-solid fa-chevron-down mx-2 move-down"></i>
+                                    <i class="fa-solid fa-chevron-up d-none move-up"></i>
+                                </div>
+                                <ul class="Services_dropdown_mobile bg-light d-none">
+                                    <li><a class="text-dark" href="">Sell items</a></li>
+                                    <li><a class="text-dark" href="">Buy items</a></li>
+                                    <li><a class="text-dark" href="">Submit a bid</a></li>
+                                </ul>
+                            </li>
+                            <li class="link"><a href="">Blog</a></li>
+                            <li class="link"><a href="">About</a></li>
+                            <li class="link"><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__nav-right d-flex">
+                        <div class="header__nav-wrapper--login mx-2">
+                            <a href="#">Sign in/ Register</a>
+                        </div>
+                        <div class="header__nav-wrapper--navBar-mobile text-light d-none">
+                            <i class="fa-solid fa-bars navBar-mobile"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main id="content">
+        <div class="intro-section d-flex justify-content-center align-items-center">
+            <div class="intro-section-banner text-center">
+                <h1>The Best Place to Buy and Sell
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nihil.
+                </p>
+                <button class="btn btn-primary">Register</button>
+            </div>
+        </div>
+        <div class="site-section">
+            <div class="container">
+                <div class="row d-flex content-padding">
+                    <div class="col-lg-7">
+                        <div class="site-section-slider-wrapper">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../imgs/xproduct_1.jpg.pagespeed.ic.jv58llKnOW.webp"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../imgs/xproduct_2.jpg.pagespeed.ic.zYGt4XwKL2.webp"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../imgs/xproduct_3.jpg.pagespeed.ic.2g0ICPmV6O.webp"
+                                            class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="site-section-text-wrapper py-5">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, alias beatae ea delectus
+                                nulla consectetur, repellat fugit facilis pariatur iure expedita voluptatibus odio porro
+                                fuga provident officia! Sed, et vero.</p>
+                            <p>Ducimus, pariatur, culpa nihil molestias ea repellendus adipisci harum ipsam perferendis,
+                                quisquam nulla ipsa fugit! Minima velit explicabo eos, perspiciatis facilis illo,
+                                architecto earum sed dolores maiores vitae soluta repellat.</p>
+                            <p>Suscipit dolor consequuntur cum illo eos, perspiciatis voluptas ut, officia quos minus.
+                                Adipisci in consequatur, suscipit ipsum, doloribus dolorem vel quod blanditiis fugiat
+                                recusandae. Illum tenetur impedit eligendi cum qui.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="site-section-boxTop-wrapper p-5 mb-5">
+                            <div class="box-top">
+                                <p class="price"><span>Price: </span>$95</p>
+                                <p class="quantity"><span>Number of bids: </span>4</p>
+                                <input type="number" placeholder="$0.00" class="w-100">
+                                <button type="submit" class="btn btn-block w-100 my-3">Submit a Bid</button>
+                                <p class="text-center">Or</p>
+                                <button class="btn btn-primary w-100">Buy Now</button>
+                            </div>
+                        </div>
+                        <div class="site-section-boxBottom-wrapper text-center p-5">
+                            <div class="box-bottom">
+                                <img src="../imgs/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp" alt="" class="rounded-circle w-50 h-50 mb-3">
+                                <h4>Collen Winston</h4>
+                                <p>Owner</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, itaque id qui quos
+                                    explicabo repudiandae temporibus adipisci incidunt harum assumenda neque quibusdam
+                                    molestiae voluptatum? Assumenda a soluta commodi dolorem nostrum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row footer-link">
+                <div class="col-lg-3">
+                    <div class="img mb-5">
+                        <img src="../imgs/tải xuống.webp" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto
+                        iure.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="footer-heading"><span>Solutions</span></h3>
+                    <ul class="list-unstyled">
+                        <li><a href="">Register</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Buy</a></li>
+                        <li><a href="">Sell</a></li>
+                        <li><a href="">Submit a bid</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="footer-heading"><span>Services</span></h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Buy</a></li>
+                        <li><a href="#">Sell</a></li>
+                        <li><a href="#">Submit a bid</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3 class="footer-heading"><span>Contact</span></h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Support Community</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Share Your Story</a></li>
+                        <li><a href="#">Our Supporters</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer-copyright">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="footer-text">
+                        <h4>Copyright ©2022 All rights reserved | This template is made with <i
+                                class="fa-solid fa-heart text-danger"></i> by Colorlib</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/header_nav.js"></script>
+
+</html>

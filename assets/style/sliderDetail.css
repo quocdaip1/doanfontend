@@ -1,0 +1,28 @@
+.content-padding{
+    padding: 8rem 9rem;
+}
+.carousel-inner{
+    border: 0.2rem solid #f8f9fa;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    width: 4rem;
+    height: 4rem;
+    top: 45%;
+    background-color: var(--orange);
+}
+.site-section-boxTop-wrapper,
+.site-section-boxBottom-wrapper{
+    border: 0.2rem solid #f8f9fa;
+}
+
+
+input[type = "number"]{
+    height: 4rem;
+    padding: 1rem;
+}
+
+.btn-block{
+    background-color: var(--bs-gray-400);
+}

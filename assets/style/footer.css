@@ -1,20 +1,32 @@
 
 footer{
     background-color: #f8f9fa;
+    padding: 6.5rem 6.5rem 0 6.5rem;
+    min-height: 85vh;
+}
+footer .footer-link{
+    padding: 1rem 0;
+}
+footer .footer-copyright{
+    height: calc(80vh - 265.25px);
+}
+
+footer .footer-heading{
+    margin-bottom: 2.5rem;
 }
 footer ul li{
-    margin-top: 20px;
-
+    margin-top: 1.6rem;
 }
 footer a{
     color: gray;
     text-decoration: underline;
     font-size: 1.5rem;
 }
-footer .logo{
+footer .img{
     width: 73px;
     height: 23px;
 }
 footer p{
     font-size: 1.5rem;
+    color: gray;
 }

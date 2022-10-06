@@ -23,7 +23,7 @@
 <body>
   <header>
     <nav class="header__nav">
-      <div class="container-fluid">
+      <div class="container nav_container">
         <div class="header__nav-wrapper d-flex justify-content-between">
           <div class="header__nav-left d-flex">
             <div class="header__nav-wrapper--logo">
@@ -34,7 +34,7 @@
               <li class="link"><a href="">Buy</a></li>
               <li class="link"><a href="">Sell</a></li>
               <li class="link text-light has-children">Services
-                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down mx-2"></i>
                 <i class="fa-solid fa-chevron-up d-none"></i>
                 <ul class="Services_dropdown d-none bg-light">
                   <li><a class="text-dark" href="">Sell items</a></li>
@@ -46,10 +46,34 @@
               <li class="link"><a href="">About</a></li>
               <li class="link"><a href="">Contact</a></li>
             </ul>
+            <ul class="header__navbar-mobile-wrapper--links d-none">
+              <i class="fa-solid fa-x position-absolute close-btn"></i>
+              <li class="link"><a href="">Home</a></li>
+              <li class="link"><a href="">Buy</a></li>
+              <li class="link"><a href="">Sell</a></li>
+              <li class="link text-dark has-children">
+                <div class="d-flex align-items-center justify-content-between">
+                  <a href="">Services</a>
+                  <i class="fa-solid fa-chevron-down mx-2 move-down"></i>
+                  <i class="fa-solid fa-chevron-up d-none move-up"></i>
+                </div>
+                <ul class="Services_dropdown_mobile bg-light d-none">
+                  <li><a class="text-dark" href="">Sell items</a></li>
+                  <li><a class="text-dark" href="">Buy items</a></li>
+                  <li><a class="text-dark" href="">Submit a bid</a></li>
+                </ul>
+              </li>
+              <li class="link"><a href="">Blog</a></li>
+              <li class="link"><a href="">About</a></li>
+              <li class="link"><a href="">Contact</a></li>
+            </ul>
           </div>
-          <div class="header__nav-right">
-            <div class="header__nav-wrapper--login">
+          <div class="header__nav-right d-flex">
+            <div class="header__nav-wrapper--login mx-2">
               <a href="#">Sign in/ Register</a>
+            </div>
+            <div class="header__nav-wrapper--navBar-mobile text-light d-none">
+              <i class="fa-solid fa-bars navBar-mobile"></i>
             </div>
           </div>
         </div>
@@ -57,6 +81,20 @@
       </div>
     </nav>
   </header>
+
+ <template id="productTemplate">
+  <div class="col-lg-3 col-md-4 col-sm-6 card-wrapper">
+    <div class="card-goods">
+      <div class="card-img">
+        <img src="./assets/imgs/xproduct_1.jpg.pagespeed.ic.jv58llKnOW.webp" alt="">
+      </div>
+      <h2 class="title">Pinky shoes</h2>
+      <p class="price">$15</p>
+      <button href="./assets/pages/details.html" class="btn btn-primary">shop now</button>
+    </div>
+  </div>
+ </template>
+
   <main id="content">
     <div class="intro-section d-flex justify-content-center align-items-center">
       <div class="intro-section-banner text-center">
@@ -76,86 +114,6 @@
           </div>
         </div>
         <div class="row goods-list">
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card-goods">
-              <div class="card-img">
-                <img src="./assets/imgs/xproduct_1.jpg.pagespeed.ic.jv58llKnOW.webp" alt="">
-              </div>
-              <h2 class="title">Pinky shoes</h2>
-              <div class="prices">$15</div>
-              <button class="btn btn-primary">shop now</button>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card-goods">
-              <div class="card-img">
-                <img src="./assets/imgs/xproduct_2.jpg.pagespeed.ic.zYGt4XwKL2.webp" alt="">
-              </div>
-              <h2 class="title">Pinky shoes</h2>
-              <div class="prices">$15</div>
-              <button class="btn btn-primary">shop now</button>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card-goods">
-              <div class="card-img">
-                <img src="./assets/imgs/xproduct_3.jpg.pagespeed.ic.2g0ICPmV6O.webp" alt="">
-              </div>
-              <h2 class="title">Pinky shoes</h2>
-              <div class="prices">$15</div>
-              <button class="btn btn-primary">shop now</button>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card-goods">
-              <div class="card-img">
-                <img src="./assets/imgs/xproduct_4.jpg.pagespeed.ic.nXVsO01FP9.webp" alt="">
-              </div>
-              <h2 class="title">Pinky shoes</h2>
-              <div class="prices">$15</div>
-              <button class="btn btn-primary">shop now</button>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card-goods">
-              <div class="card-img">
-                <img src="./assets/imgs/xproduct_5.jpg.pagespeed.ic.96U3mkydkB.webp" alt="">
-              </div>
-              <h2 class="title">Pinky shoes</h2>
-              <div class="prices">$15</div>
-              <button class="btn btn-primary">shop now</button>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card-goods">
-              <div class="card-img">
-                <img src="./assets/imgs/xproduct_6.jpg.pagespeed.ic.o7nMT9VPXJ.webp" alt="">
-              </div>
-              <h2 class="title">Pinky shoes</h2>
-              <div class="prices">$15</div>
-              <button class="btn btn-primary">shop now</button>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card-goods">
-              <div class="card-img">
-                <img src="./assets/imgs/xproduct_7.jpg.pagespeed.ic.k1dM1LPDeN.webp" alt="">
-              </div>
-              <h2 class="title">Pinky shoes</h2>
-              <div class="prices">$15</div>
-              <button class="btn btn-primary">shop now</button>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="card-goods">
-              <div class="card-img">
-                <img src="./assets/imgs/xproduct_8.jpg.pagespeed.ic._zi5TVQkpp.webp" alt="">
-              </div>
-              <h2 class="title">Pinky shoes</h2>
-              <div class="prices">$15</div>
-              <button class="btn btn-primary">Shop now</button>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -288,183 +246,189 @@
         </div>
       </div>
     </div>
-    <div class="test d-flex align-items-center">
-      <div class="container-fluid">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators btn-slide">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="container">
-                <div class="row">
-                  <div class="col-6">
-                    <div class="test-item">
-                      <div class="test-person d-flex">
-                        <img src="./assets/imgs/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp" alt="">
-                        <div class="person">
-                          <h3>Allison Holmes</h3>
-                          <span>Designer</span>
-                        </div>
-                      </div>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
-                        placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
-                        omnis maxime voluptatibus adipisci iste.</p>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="test-item">
-                      <div class="test-person d-flex">
-                        <img src="./assets/imgs/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp" alt="">
-                        <div class="person">
-                          <h3>Allison Holmes</h3>
-                          <span>Designer</span>
-                        </div>
-                      </div>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
-                        placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
-                        omnis maxime voluptatibus adipisci iste.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <div class="row">
-                  <div class="col-6">
-                    <div class="test-item">
-                      <div class="test-person d-flex">
-                        <img src="./assets/imgs/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp" alt="">
-                        <div class="person">
-                          <h3>Allison Holmes</h3>
-                          <span>Designer</span>
-                        </div>
-                      </div>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
-                        placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
-                        omnis maxime voluptatibus adipisci iste.</p>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="test-item">
-                      <div class="test-person d-flex">
-                        <img src="./assets/imgs/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp" alt="">
-                        <div class="person">
-                          <h3>Allison Holmes</h3>
-                          <span>Designer</span>
-                        </div>
-                      </div>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
-                        placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
-                        omnis maxime voluptatibus adipisci iste.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="container">
-                <div class="row">
-                  <div class="col-6">
-                    <div class="test-item">
-                      <div class="test-person d-flex">
-                        <img src="./assets/imgs/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp" alt="">
-                        <div class="person">
-                          <h3>Allison Holmes</h3>
-                          <span>Designer</span>
-                        </div>
-                      </div>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
-                        placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
-                        omnis maxime voluptatibus adipisci iste.</p>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="test-item">
-                      <div class="test-person d-flex">
-                        <img src="./assets/imgs/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp" alt="">
-                        <div class="person">
-                          <h3>Allison Holmes</h3>
-                          <span>Designer</span>
-                        </div>
-                      </div>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
-                        placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
-                        omnis maxime voluptatibus adipisci iste.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="site-section">
+    <div class="test d-flex align-items-center position-relative">
       <div class="container">
-        <div class="row d-flex justify-content-center text-center py-5">
-          <div class="col-lg-7">
-            <h2>Create an account and start Buy, Bid or Sell Now!</h2>
-            <button class="btn btn-primary">Register</button>
+        <div class="test-wrapper">
+          <div class="test-caption position-absolute">
+            <span>TESTIMONIALS</span>
+            <h2>Happy <strong>Clients</strong></h2>
+          </div>
+          <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="true">
+            <div class="carousel-indicators btn-slide">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="test-item">
+                        <div class="test-person d-flex">
+                          <img src="./assets/imgs/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp" alt="">
+                          <div class="person">
+                            <h3>Allison Holmes</h3>
+                            <span>Designer</span>
+                          </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
+                          placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
+                          omnis maxime voluptatibus adipisci iste.</p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="test-item">
+                        <div class="test-person d-flex">
+                          <img src="./assets/imgs/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp" alt="">
+                          <div class="person">
+                            <h3>Allison Holmes</h3>
+                            <span>Designer</span>
+                          </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
+                          placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
+                          omnis maxime voluptatibus adipisci iste.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="test-item">
+                        <div class="test-person d-flex">
+                          <img src="./assets/imgs/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp" alt="">
+                          <div class="person">
+                            <h3>Allison Holmes</h3>
+                            <span>Designer</span>
+                          </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
+                          placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
+                          omnis maxime voluptatibus adipisci iste.</p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="test-item">
+                        <div class="test-person d-flex">
+                          <img src="./assets/imgs/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp" alt="">
+                          <div class="person">
+                            <h3>Allison Holmes</h3>
+                            <span>Designer</span>
+                          </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
+                          placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
+                          omnis maxime voluptatibus adipisci iste.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="test-item">
+                        <div class="test-person d-flex">
+                          <img src="./assets/imgs/xperson_1.jpg.pagespeed.ic.l5rAz42qpM.webp" alt="">
+                          <div class="person">
+                            <h3>Allison Holmes</h3>
+                            <span>Designer</span>
+                          </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
+                          placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
+                          omnis maxime voluptatibus adipisci iste.</p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="test-item">
+                        <div class="test-person d-flex">
+                          <img src="./assets/imgs/xperson_2.jpg.pagespeed.ic.ZCKS1e4Izq.webp" alt="">
+                          <div class="person">
+                            <h3>Allison Holmes</h3>
+                            <span>Designer</span>
+                          </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sunt molestiae cum omnis illum
+                          placeat. Illum, ipsam doloribus aliquam molestiae unde voluptatum tempore dolorum blanditiis
+                          omnis maxime voluptatibus adipisci iste.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
+    <div class="site-section section-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="site-section-wrapper text-center">
+              <h2>Create an account and start Buy, Bid or Sell Now!</h2>
+              <button class="btn btn-primary">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     <div class="container">
-      <div class="row py-5">
+      <div class="row footer-link">
         <div class="col-lg-3">
-          <div class="logo mb-5">
+          <div class="img mb-5">
             <img src="./assets/imgs/tải xuống.webp" alt="">
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aut repudiandae corporis odit, aspernatur
-            blanditiis fuga, aliquid hic ipsa ea neque laboriosam. Inventore et porro deserunt debitis optio ipsam
-            harum!</p>
-            <a href="#">Learn more</a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>
+          <a href="#">Learn more</a>
         </div>
         <div class="col-lg-3">
-            <h3 class="footer-heading"><span>Solutions</span></h3>
-            <ul class="list-unstyled">
-              <li><a href="">Register</a></li>
-              <li><a href="">Login</a></li>
-              <li><a href="">Buy</a></li>
-              <li><a href="">Sell</a></li>
-              <li><a href="">Submit a bid</a></li>
-            </ul>
+          <h3 class="footer-heading"><span>Solutions</span></h3>
+          <ul class="list-unstyled">
+            <li><a href="">Register</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Buy</a></li>
+            <li><a href="">Sell</a></li>
+            <li><a href="">Submit a bid</a></li>
+          </ul>
         </div>
         <div class="col-lg-3">
           <h3 class="footer-heading"><span>Services</span></h3>
           <ul class="list-unstyled">
-          <li><a href="#">Register</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Buy</a></li>
-          <li><a href="#">Sell</a></li>
-          <li><a href="#">Submit a bid</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="#">Submit a bid</a></li>
           </ul>
-          </div>
-          <div class="col-lg-3">
-            <h3 class="footer-heading"><span>Contact</span></h3>
-            <ul class="list-unstyled">
+        </div>
+        <div class="col-lg-3">
+          <h3 class="footer-heading"><span>Contact</span></h3>
+          <ul class="list-unstyled">
             <li><a href="#">Help Center</a></li>
             <li><a href="#">Support Community</a></li>
             <li><a href="#">Press</a></li>
             <li><a href="#">Share Your Story</a></li>
             <li><a href="#">Our Supporters</a></li>
-            </ul>
-            </div>
+          </ul>
+        </div>
       </div>
-      <div class="row text-center my-4">
-        <div class="col-12">
+      <div class="row footer-copyright">
+        <div class="col-12 d-flex align-items-center justify-content-center">
           <div class="footer-text">
-            <h4>Copyright ©2022 All rights reserved | This template is made with  by Colorlib</h4>
+            <h4>Copyright ©2022 All rights reserved | This template is made with <i
+                class="fa-solid fa-heart text-danger"></i> by Colorlib</h4>
           </div>
         </div>
       </div>
@@ -472,4 +436,7 @@
   </footer>
 </body>
 <script src="./assets/libs/bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+<script src="./assets/js/header_nav.js"></script>
+<script type="module" src="./assets/js/listGoods.mjs"></script>
+
 </html>
