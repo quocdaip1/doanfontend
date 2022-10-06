@@ -16,6 +16,9 @@ function buildProductElement(product) {
     const priceProduct = goods.querySelector('.price');
     priceProduct.innerText = `$${product.price}`;
 
+    const link = goods.querySelector('a');
+    link.href = `./assets/pages/details.html?categoryId=${product.id}`;
+
     return goods;
 }
 
