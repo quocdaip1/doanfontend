@@ -14,6 +14,7 @@ function buildProductElement(product) {
     imgProduct.src = product.imgGoods;
 
     const priceProduct = goods.querySelector('.price');
+    priceProduct.style.fontSize = '1.5rem';
     priceProduct.innerText = `$${product.price}`;
 
     const link = goods.querySelector('a');
@@ -21,8 +22,6 @@ function buildProductElement(product) {
 
     return goods;
 }
-
-
 async function update(){
     const goodsList = document.querySelector('.goods-list');
     const data = await Get_Data(`${Datalink}/category`);
@@ -30,6 +29,5 @@ async function update(){
         const productElement = buildProductElement(element);
         goodsList.appendChild(productElement);
     });
-    
 }
 update();

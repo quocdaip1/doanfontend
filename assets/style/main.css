@@ -13,6 +13,7 @@
 #content .intro-section {
     background-image: url(../imgs/hero_1.jpg.webp);
     background-size: cover;
+    object-fit: cover;
     width: 100%;
     min-height: 100vh;
     color: var(--white);
@@ -37,6 +38,9 @@
     border: none;
     background-color: var(--orange);
     border-radius: 0;
+}
+.btn-block{
+    background-color: var(--bs-gray-300);
 }
 
 #content .intro-section .intro-section-banner {

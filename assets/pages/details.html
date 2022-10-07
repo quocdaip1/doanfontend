@@ -99,7 +99,10 @@
         <div class="site-section">
             <div class="container">
                 <div class="row d-flex content-padding">
-                    <div class="col-lg-7">
+                    <template id="todoBidders">
+                        <li class="d-flex justify-content-between text-dark mb-5 p-3"><div class="d-flex align-items-center"><p class="idBidder m-0"></p><img class="mx-3" src="" alt=""><p class="nameBidder m-0"></p></div><strong class="priceBidder">$35</strong></li>
+                    </template>
+                    <div class="col-lg-7 me-5">
                         <div class="site-section-slider-wrapper">
                             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
@@ -138,6 +141,11 @@
                             <p>Suscipit dolor consequuntur cum illo eos, perspiciatis voluptas ut, officia quos minus.
                                 Adipisci in consequatur, suscipit ipsum, doloribus dolorem vel quod blanditiis fugiat
                                 recusandae. Illum tenetur impedit eligendi cum qui.</p>
+                        </div>
+                        <div class="site-section-bidders-wrapper">
+                            <h1 class="my-5">Bidders</h1>
+                            <ul class="list-bidders p-0">
+                            </ul>
                         </div>
                     </div>
                     <div class="col-lg-4">
