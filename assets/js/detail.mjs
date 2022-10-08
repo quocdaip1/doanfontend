@@ -65,6 +65,7 @@ async function update() {
 
   const listBidders = document.querySelector('.list-bidders');
   const productElement = await Get_Data(`${Datalink}/bidders`);
+  const ok = await Get_Data(`${Datalink}/bidders`)
 
   let num = 0;
   for (let i = 0; i < 5; i++) {
@@ -76,6 +77,9 @@ async function update() {
         }
     }
   }
+  console.log(productElement);
+  console.log(ok);
+
   const max =  productElement[0]['priceBidders'];
   const Price = document.querySelector('.site-section .price strong');
   Price.innerText = `$${max}`;
