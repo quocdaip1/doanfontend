@@ -26,7 +26,7 @@ function buildProductElement(product) {
 
 }
 
-function bidders(product){
+function bidders(product, index){
 
   const todobidders = document.querySelector('#todoBidders');
   const fragment = todobidders.content.cloneNode(true);
@@ -39,7 +39,6 @@ function bidders(product){
   
   
 
-  const idBidder = element.querySelector('.idBidder');
   const imgBidder = element.querySelector('img');
   imgBidder.style.borderRadius = "50%";
   imgBidder.style.width = "3rem";
@@ -54,6 +53,10 @@ function bidders(product){
   const priceBidder = element.querySelector('.priceBidder');
   priceBidder.innerText = `$${product.priceBidders}`;
 
+  const     serialBidder =  element.querySelector('.serialBidder'); 
+
+  serialBidder.innerText = `${index + 1}.`;
+
 
   return element;
 }
@@ -65,11 +68,12 @@ async function update() {
 
   const listBidders = document.querySelector('.list-bidders');
   const productElement = await Get_Data(`${Datalink}/bidders`);
-  const ok = await Get_Data(`${Datalink}/bidders`)
+  const serialBidder =  document.querySelector('.serialBidder'); 
+
 
   let num = 0;
-  for (let i = 0; i < 5; i++) {
-    for (let j = i + 1; j < 5; j++) {
+  for (let i = 0; i < productElement.length; i++) {
+    for (let j = i + 1; j < productElement.length; j++) {
         if(productElement[i]['priceBidders'] < productElement[j]['priceBidders']) {
             num = productElement[i];
             productElement[i] = productElement[j];
@@ -77,8 +81,8 @@ async function update() {
         }
     }
   }
-  console.log(productElement);
-  console.log(ok);
+ 
+
 
   const max =  productElement[0]['priceBidders'];
   const Price = document.querySelector('.site-section .price strong');
@@ -86,10 +90,12 @@ async function update() {
 
 
   listBidders.innerText ="";
-    productElement.forEach(element => {
-       const e = bidders(element);
+    productElement.forEach((element, index) => {
+       const e = bidders(element, index);
        listBidders.appendChild(e);
     })
+  
+  
 
 
   
