@@ -95,8 +95,6 @@ async function update() {
        listBidders.appendChild(e);
     })
   
-  
-
 
   
 }
@@ -104,3 +102,14 @@ async function update() {
 
 
 update()
+
+const container = document.querySelector('.site-section .container-bidder');
+const contentPaddinng = document.querySelector('.site-section .container-bidder .row') 
+let width = window.innerWidth;
+if(width < 900) {
+  container.classList.remove('container');
+  container.classList.add('container-fluid');
+  container.style.width = "85%";
+  container.style.padding = "5rem 0";
+  contentPaddinng.classList.remove('content-padding');
+}
