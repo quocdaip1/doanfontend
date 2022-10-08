@@ -25,6 +25,7 @@ function buildProductElement(product) {
 async function update(){
     const goodsList = document.querySelector('.goods-list');
     const data = await Get_Data(`${Datalink}/category`);
+    goodsList.innerText = "";
     data.forEach((element,index) => {
         if(index >= 8) return;
         const productElement = buildProductElement(element);
