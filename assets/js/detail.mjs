@@ -89,10 +89,11 @@ async function update() {
   Price.innerText = `$${max}`;
 
 
-  listBidders.innerText ="";
-    productElement.forEach((element, index) => {
-       const e = bidders(element, index);
-       listBidders.appendChild(e);
+    listBidders.innerText ="";
+    productElement.forEach((element, index) => {  
+      if (index >= 5) return;
+      const e = bidders(element, index);
+      listBidders.appendChild(e);
     })
   
 
@@ -111,5 +112,5 @@ if(width < 900) {
   container.classList.add('container-fluid');
   container.style.width = "85%";
   container.style.padding = "5rem 0";
-  contentPaddinng.classList.remove('content-padding');
+  contentPaddinng.classList.remove('content-padding');  
 }
