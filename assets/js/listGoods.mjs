@@ -38,6 +38,8 @@ function buildProductElement(product) {
 
     return goods;
 }
+
+
 async function update(){
     const goodsList = document.querySelector('.goods-list');
     const data = await Get_Data(`${Datalink}/category`);
