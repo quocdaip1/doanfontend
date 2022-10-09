@@ -84,12 +84,18 @@
 
  <template id="productTemplate">
   <div class="col-lg-3 col-md-4 col-sm-6 card-wrapper">
-    <div class="card-goods">
+    <div class="card-goods position-relative">
+      <div class="circle position-absolute top-0 start-0 d-flex justify-content-center align-items-center">
+        <p class="price m-0"></p>
+      </div>
       <div class="card-img">
         <img src="./assets/imgs/xproduct_1.jpg.pagespeed.ic.jv58llKnOW.webp" alt="">
       </div>
       <h2 class="title">Pinky shoes</h2>
-      <p class="price">$15</p>
+      <div class="priceAndCategory d-flex justify-content-between">
+        <p class="category"></p>
+        <p class="quanlityBidders"></p>
+      </div>
       <a href="./assets/pages/details.html" type="submit" class="btn btn-block">Submit a Bid</a>
     </div>
   </div>
