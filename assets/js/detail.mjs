@@ -112,5 +112,5 @@ if(width < 900) {
   container.classList.add('container-fluid');
   container.style.width = "85%";
   container.style.padding = "5rem 0";
-  contentPaddinng.classList.remove('content-padding');  
+  contentPaddinng.classList.remove('content-padding');    
 }

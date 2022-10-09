@@ -4,6 +4,7 @@ const btnMenuMobile = document.querySelector(
 const menuMoblie = document.querySelector(
   ".header__navbar-mobile-wrapper--links"
 );
+const blackBox = document.querySelector('.blackBox');
 const closeMenuMobile = document.querySelector(".close-btn");
 closeMenuMobile.style.cursor = "pointer";
 const btnMoveDown = document.querySelector(".move-down");
@@ -12,11 +13,19 @@ const listServerDropdown = document.querySelector('.Services_dropdown_mobile');
 listServerDropdown.style.backgroundColor = "#999";
 
 btnMenuMobile.addEventListener("click", function () {
-  menuMoblie.classList.add("active1");
+    menuMoblie.classList.add("active1");
+    blackBox.classList.add("active1");
 });
+
+blackBox.addEventListener('click', function() {
+  menuMoblie.classList.remove("active1");
+  listServerDropdown.classList.remove('active1');
+  blackBox.classList.remove("active1"); 
+})
 closeMenuMobile.addEventListener("click", function () {
   menuMoblie.classList.remove("active1");
   listServerDropdown.classList.remove('active1');
+  blackBox.classList.remove("active1"); 
 });
 
 btnMoveDown.addEventListener("click", function () {

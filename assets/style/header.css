@@ -109,6 +109,9 @@ header .header__nav-wrapper .header__nav-right{
     header .header__nav-wrapper .header__nav-left .header__nav-wrapper--links{
         display: none !important;
     }
+    .header__navbar-mobile-wrapper--links{
+        width: 40%;
+    }
     .header__nav-wrapper .header__nav-right .header__nav-wrapper--navBar-mobile{
         display: block !important;
         cursor: pointer;
@@ -118,5 +121,18 @@ header .header__nav-wrapper .header__nav-right{
         right: 12%;
         font-size: 3rem;
     }
+    /* blackBox */
+    .blackBox{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 60%;   
+        background-color: black;
+        content:"";
+        z-index: 999999;
+        opacity: 0.5;
+        display: none;
+}
     
 }
