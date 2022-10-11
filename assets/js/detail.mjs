@@ -24,6 +24,8 @@ function buildProductElement(product) {
   const nameOwner = document.querySelector('.box-bottom > h4');
   nameOwner.innerText = product.nameOwner;
 
+  
+
 }
 
 function bidders(product, index){
@@ -53,15 +55,29 @@ function bidders(product, index){
   const priceBidder = element.querySelector('.priceBidder');
   priceBidder.innerText = `$${product.priceBidders}`;
 
-  const     serialBidder =  element.querySelector('.serialBidder'); 
-
+  const serialBidder =  element.querySelector('.serialBidder'); 
   serialBidder.innerText = `${index + 1}.`;
 
 
   return element;
 }
 
+async function updateapi(){
+  const inputName = document.querySelector('.inputName');
+  const inputPrice = document.querySelector('.inputPrice');
+
+
+  const newPost = {
+    nameBidders: inputName.value,
+    priceBidders: inputPrice.value
+  }
+
+  Post_Data(`${Datalink}/bidders`, newPost);
+
+}
+
 async function update() {
+
   const element = await Get_Data(`${Datalink}/category/${categoryId}`);
   buildProductElement(element);
   
@@ -91,7 +107,7 @@ async function update() {
 
     listBidders.innerText ="";
     productElement.forEach((element, index) => {  
-      if (index >= 5) return;
+      if (index >= 10) return;
       const e = bidders(element, index);
       listBidders.appendChild(e);
     })
@@ -100,9 +116,14 @@ async function update() {
   
 }
 
+const btnUpdate = document.querySelector('.btnUpdate');
+btnUpdate.addEventListener('click', function (){
+    // const loading = document.querySelector('.ok');
+    // loading.style.display = "flex";
+    updateapi()
+});
+update();
 
-
-update()
 
 const container = document.querySelector('.site-section .container-bidder');
 const contentPaddinng = document.querySelector('.site-section .container-bidder .row') 

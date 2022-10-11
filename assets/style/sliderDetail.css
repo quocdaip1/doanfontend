@@ -17,11 +17,18 @@
     border: 0.2rem solid #f8f9fa;
 }
 
-
-input[type = "number"]{
+/* main-details */
+input[type = "number"],
+.inputName{
     height: 4rem;
     padding: 1rem;
+    font-size: 1.5rem;
 }
+.inputName{
+    margin-bottom: 1.1rem;
+}
+
+
 
 .btn-block{
     background-color: var(--bs-gray-400);

@@ -51,3 +51,15 @@ async function update(){
     });
 }
 update();
+const loading = document.querySelector('.ok');
+const body = 
+function beforeloading (){
+    loading.style.display = "flex";
+    body.style.display = "none";
+}
+function afterloading(){
+    loading.style.display = "none"
+}
+
+
+beforeloading()

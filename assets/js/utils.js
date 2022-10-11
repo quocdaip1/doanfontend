@@ -9,6 +9,9 @@ export async function Get_Data(url, queryParams = null){
 export async function Post_Data(url, body){
     const dataJson = await fetch(url, {
         method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
         body: JSON.stringify(body)
     })
     const data = await dataJson.json();
