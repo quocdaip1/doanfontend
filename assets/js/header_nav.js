@@ -21,7 +21,7 @@ blackBox.addEventListener('click', function() {
   menuMoblie.classList.remove("active1");
   listServerDropdown.classList.remove('active1');
   blackBox.classList.remove("active1"); 
-})
+});
 closeMenuMobile.addEventListener("click", function () {
   menuMoblie.classList.remove("active1");
   listServerDropdown.classList.remove('active1');
