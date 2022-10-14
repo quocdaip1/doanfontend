@@ -20,7 +20,7 @@ function buildProductElement(product) {
     quanlityBidders.style.fontSize = "1.5rem"
 
     const category = goods.querySelector('.category');
-    category.innerText = product.Category;
+    category.innerText = product.category;
     category.style.fontSize = "1.5rem";
 
     const circle = goods.querySelector('.circle');
@@ -32,10 +32,10 @@ function buildProductElement(product) {
     priceProduct.style.fontSize = '2rem';
     priceProduct.style.color = "white"
     priceProduct.style.fontWeight = "bolder"
-    priceProduct.innerText = `$${product.price}`;
+    priceProduct.innerText = `$${product.priceGoods}`;
 
     const link = goods.querySelector('a');
-    link.href = `./assets/pages/details.html?categoryId=${product.id}`;
+    link.href = `./assets/pages/details.html?goodsId=${product.id}`;
 
     return goods;
 }
@@ -54,12 +54,12 @@ async function update(){
 update();
 const loading = document.querySelector('.ok');
 
-function beforeloading (){
-    loading.style.display = "flex";
-    body.style.display = "none";
-}
-function afterloading(){
-    loading.style.display = "none"
-}
+// function beforeloading (){
+//     loading.style.display = "flex";
+//     body.style.display = "none";
+// }
+// function afterloading(){
+//     loading.style.display = "none"
+// }
 
 

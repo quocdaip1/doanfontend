@@ -3,7 +3,7 @@ import { Post_Data, Delete_Data } from "./utils.js";
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const categoryId = urlParams.get("categoryId");
+const goodsId = urlParams.get("goodsId");
 
 function buildProductElement(product) {
 
@@ -17,7 +17,7 @@ function buildProductElement(product) {
 
   const price = document.querySelector(".price strong");
   price.style.fontSize = "1.5rem";
-  price.innerText = `$${product.price}`;
+  price.innerText = `$${product.priceGoods}`;
 
   const imgOwner = document.querySelector('.box-bottom > img');
   imgOwner.src = product.imgOwner;
@@ -78,7 +78,7 @@ async function updateapi(){
 
 async function update() {
 
-  const element = await Get_Data(`${Datalink}/category/${categoryId}`);
+  const element = await Get_Data(`${Datalink}/goods/${goodsId}`);
   buildProductElement(element);
   
 
