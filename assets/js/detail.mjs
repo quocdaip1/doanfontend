@@ -107,7 +107,7 @@ async function update() {
 
     listBidders.innerText ="";
     productElement.forEach((element, index) => {  
-      if (index >= 10) return;
+      if (index >= 5) return;
       const e = bidders(element, index);
       listBidders.appendChild(e);
     })
